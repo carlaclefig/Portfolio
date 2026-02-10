@@ -1,0 +1,363 @@
+---
+// src/pages/about.astro
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>About Me - Mi Portafolio</title>
+  </head>
+  <body class="min-h-dvh grid grid-rows-[auto_1fr_auto]">
+    <Header />
+
+    <main class="py-20 px-6 bg-white dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto mt-10">
+        <!-- Header con foto y bio -->
+        <div class="flex flex-col md:flex-row gap-12 items-center mb-16">
+          <!-- Foto -->
+          <div class="flex-shrink-0">
+            <div class="w-70 h-70 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="/public/carla.png"
+                alt="About me"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="flex-1 space-y-4">
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-700 dark:text-white"
+            >
+              About Me
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              I’m <strong>Carla Clemente</strong>, a <strong
+                >Full-Stack Web Developer</strong
+              >
+              with a background in business administration. I build digital solutions
+              that connect technology and business, combining frontend, backend, and
+              data.
+            </p>
+            <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              My transition into tech started when I identified automation
+              opportunities within administrative processes. Since then, I’ve
+              focused on creating scalable applications, collaborating with
+              teams, and bringing a holistic view between technical and
+              operational needs. I’m motivated by building products where
+              technology creates real impact.
+            </p>
+          </div>
+        </div>
+
+        <!-- Grid de tarjetas -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Card: Skills -->
+          <div
+            class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-700 dark:text-white">
+                Skills
+              </h2>
+            </div>
+            <div class="space-y-2">
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Lenguajes
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Python, Java, TypeScript, JavaScript, SQL, HTML, CSS.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Frontend
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  React, manejo de estado, consumo de APIs, SPA.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Backend
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Node.js, Spring Boot, diseño de APIs REST, microservicios.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Datos & IA
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Pandas, NumPy, Jupyter, modelos de Machine Learning.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Bases de datos
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  PostgreSQL, SQL Server, MySQL, MongoDB.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Herramientas
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Git, GitHub, VS Code, WSL, Docker, OpenAPI.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Metodologías
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Scrum, trabajo colaborativo, documentación técnica.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Experience -->
+          <div
+            class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-700 dark:text-white">
+                Experience
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <p class="text-gray-600 dark:text-gray-300 mt-2">
+                I have contributed to frontend applications, microservices
+                architectures, and products powered by artificial intelligence.
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mt-2">
+                I work with <strong>React and TypeScript</strong> on the client side,
+                and <strong>Node.js and Spring Boot</strong> on the backend, designing
+                robust and maintainable APIs. I’m experienced with relational and
+                non-relational databases, testing, documentation, and engineering
+                best practices.
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mt-2">
+                Because of my business background, I can translate company needs
+                into technical solutions, enabling smooth communication between
+                stakeholders, users, and development teams.
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 mt-2">
+                My focus is delivering clear, scalable software that solves real
+                problems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card: Education -->
+          <div
+            class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-purple-600 dark:text-purple-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-700 dark:text-white">
+                Education
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Full-Stack Web Development
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Codeable • Lima, Perú • 2025 – 2026
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Intensive training in frontend and backend development,
+                  software architecture, REST APIs, databases, and agile
+                  teamwork.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Data Science Specialization
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  Oracle Next Education • 2025 – 2026
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Comprehensive training in data analysis, Python, machine
+                  learning, and real-world predictive model implementation.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Master’s Degree in Human Talent Management
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  César Vallejo University • Trujillo, Perú • 2022 – 2023
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Focus on leadership, communication, and alignment between
+                  people, processes, and business goals.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 dark:text-white">
+                  Bachelor’s Degree in Business Administration
+                </h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">
+                  César Vallejo University • Huaraz, Perú • 2015 – 2020
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Background in process analysis and business management applied
+                  to problem-solving.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Hobbies -->
+          <div
+            class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-orange-600 dark:text-orange-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-700 dark:text-white">
+                My Hobbies
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <h3 class="font-semibold text-gray-800 dark:text-white mb-0">
+                Travel
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Passionate about exploring new cultures and destinations. Travel
+                inspires my creativity and broadens my perspective on
+                problem-solving.
+              </p>
+              <h3 class="font-semibold text-gray-800 dark:text-white mb-0">
+                Food
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300">
+                Exploring new cuisines and trying out new restaurants is one of
+                my favorite hobbies, as it allows me to discover new flavors and
+                experiences from around the world.
+              </p>
+              <img
+                src="/public/hobby.jpeg"
+                alt="hobbies"
+                data-image="hobby"
+                class="cursor-pointer rounded-lg hover:opacity-90 transition-opacity"
+              />
+              <div
+                data-modal="hobby"
+                class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 cursor-pointer"
+              >
+                <img
+                  data-modal-img="hobby"
+                  class="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105"
+                  alt="Hobby enlarged"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<script>
+  const image = document.querySelector('[data-image="hobby"]');
+  const modal = document.querySelector('[data-modal="hobby"]');
+  const modalImg = document.querySelector('[data-modal-img="hobby"]');
+
+  image?.addEventListener("click", () => {
+    modal?.classList.remove("hidden");
+    modal?.classList.add("flex");
+    if (modalImg && image instanceof HTMLImageElement) {
+      modalImg.setAttribute("src", image.src);
+    }
+  });
+
+  modal?.addEventListener("click", () => {
+    modal?.classList.add("hidden");
+    modal?.classList.remove("flex");
+  });
+</script>
