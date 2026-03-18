@@ -19,57 +19,85 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "notepad-app",
-    title: "Notepad App",
+    slug: "churn-insight",
+    title: "Churn Insight",
     shortDescription:
-      "A lightweight note-taking application built with vanilla JavaScript. Create, edit, and delete notes with a clean interface while data persists in Local Storage.",
+      "Enterprise-grade customer churn prediction platform powered by machine learning and AI. Analyze customer risk levels and generate personalized retention strategies using Claude AI.",
     fullDescription:
-      "Notepad is a minimalist note-taking application that demonstrates the power of vanilla JavaScript without relying on frameworks. The app provides a seamless experience for capturing thoughts and ideas with instant saving capabilities.\n\nUsers can effortlessly create multiple notes, edit them on the fly, and organize their thoughts with an intuitive interface. All data is stored locally in the browser's Local Storage, ensuring privacy and offline access.",
+      "Churn Insight is a business intelligence platform that predicts customer churn and generates AI-powered retention strategies. It uses a Random Forest model deployed in ONNX to analyze customer behavior, classify risk levels, and identify at-risk users in real time.\n\nThe system is built on a microservices architecture with a Spring Boot backend and a React frontend featuring interactive dashboards. It also integrates generative AI to automatically create personalized retention plans, enabling data-driven decision-making to reduce customer attrition.",
     features: [
-      "Create and delete notes instantly",
-      "Persistent storage using Local Storage API",
-      "Clean and intuitive user interface",
-      "Real-time auto-save functionality",
-      "No backend required - fully client-side",
-      "Responsive design for mobile and desktop",
+      "Real-time customer churn prediction using ONNX ML model",
+      "Three-tier risk classification: Low, Medium, High",
+      "AI-generated personalized retention plans via Claude API",
+      "Interactive analytics dashboard with 4 visualization charts",
+      "Customer search and detailed profile analysis",
+      "Persistent dark/light mode theme",
+      "Responsive mobile-first design",
+      "Docker containerization for easy deployment",
+      "RESTful API architecture with Spring Boot",
+      "Random Forest model with 78% accuracy and 89% churn recall",
     ],
     technologies: [
       {
-        name: "HTML5",
-        imageIcon: "/html.png",
+        name: "Spring Boot",
+        imageIcon: "/springboot.png",
         color:
-          "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+          "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
         description:
-          "The cornerstone of modern web development, used to structure the app's content and layout.",
+          "Java framework powering the backend REST API with ONNX Runtime integration for ML model inference.",
       },
       {
-        name: "CSS3",
-        imageIcon: "/css.png",
+        name: "React",
+        imageIcon: "/react.png",
         color:
           "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
-          "A design powerhouse used to create captivating visuals, animations, and responsive layouts.",
+          "Modern frontend library building an interactive dashboard with real-time predictions and data visualizations.",
       },
       {
-        name: "JavaScript",
-        imageIcon: "/javascript.png",
+        name: "TypeScript",
+        imageIcon: "/typescript.svg",
         color:
-          "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
+          "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
-          "Versatile scripting language powering all interactivity, data manipulation, and app logic.",
+          "Strongly-typed JavaScript ensuring code quality and maintainability across the frontend application.",
       },
       {
-        name: "Local Storage",
-        imageIcon: "/localstorage.webp",
+        name: "ONNX Runtime",
+        imageIcon: "/onnx.png",
         color:
           "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
         description:
-          "Browser API used to persist notes client-side, enabling offline access with no backend needed.",
+          "Cross-platform ML inference engine running the trained Random Forest model for real-time predictions.",
+      },
+      {
+        name: "Claude AI",
+        imageIcon: "/claude.svg",
+        color:
+          "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+        description:
+          "Anthropic's LLM generating personalized customer retention strategies based on churn risk analysis.",
+      },
+      {
+        name: "Tailwind CSS",
+        imageIcon: "/tailwind.png",
+        color:
+          "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
+        description:
+          "Utility-first CSS framework creating a modern, responsive UI with dark mode support.",
+      },
+      {
+        name: "Docker",
+        imageIcon: "/docker.png",
+        color:
+          "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+        description:
+          "Containerization platform orchestrating microservices for consistent deployment across environments.",
       },
     ],
-    demoUrl: "https://notepad-vanila-js.netlify.app/",
-    githubUrl: "https://github.com/carlaclefig/js-notepad",
-    imageUrl: "/notepad.png",
+    demoUrl: "https://churn-insight.netlify.app/",
+    githubUrl: "https://github.com/carlaclefig/churn-insight",
+    imageUrl: "/churn-insight.png",
   },
   {
     slug: "track-library",
@@ -134,6 +162,59 @@ export const projects: Project[] = [
     demoUrl: "https://track-library.netlify.app/",
     githubUrl: "https://github.com/carlaclefig/song-server",
     imageUrl: "/tracklibrary.png",
+  },
+  {
+    slug: "notepad-app",
+    title: "Notepad App",
+    shortDescription:
+      "A lightweight note-taking application built with vanilla JavaScript. Create, edit, and delete notes with a clean interface while data persists in Local Storage.",
+    fullDescription:
+      "Notepad is a minimalist note-taking application that demonstrates the power of vanilla JavaScript without relying on frameworks. The app provides a seamless experience for capturing thoughts and ideas with instant saving capabilities.\n\nUsers can effortlessly create multiple notes, edit them on the fly, and organize their thoughts with an intuitive interface. All data is stored locally in the browser's Local Storage, ensuring privacy and offline access.",
+    features: [
+      "Create and delete notes instantly",
+      "Persistent storage using Local Storage API",
+      "Clean and intuitive user interface",
+      "Real-time auto-save functionality",
+      "No backend required - fully client-side",
+      "Responsive design for mobile and desktop",
+    ],
+    technologies: [
+      {
+        name: "HTML5",
+        imageIcon: "/html.png",
+        color:
+          "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+        description:
+          "The cornerstone of modern web development, used to structure the app's content and layout.",
+      },
+      {
+        name: "CSS3",
+        imageIcon: "/css.png",
+        color:
+          "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+        description:
+          "A design powerhouse used to create captivating visuals, animations, and responsive layouts.",
+      },
+      {
+        name: "JavaScript",
+        imageIcon: "/javascript.png",
+        color:
+          "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
+        description:
+          "Versatile scripting language powering all interactivity, data manipulation, and app logic.",
+      },
+      {
+        name: "Local Storage",
+        imageIcon: "/localstorage.webp",
+        color:
+          "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
+        description:
+          "Browser API used to persist notes client-side, enabling offline access with no backend needed.",
+      },
+    ],
+    demoUrl: "https://notepad-vanila-js.netlify.app/",
+    githubUrl: "https://github.com/carlaclefig/js-notepad",
+    imageUrl: "/notepad.png",
   },
 ];
 
