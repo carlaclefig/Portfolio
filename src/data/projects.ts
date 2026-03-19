@@ -40,7 +40,7 @@ export const projects: Project[] = [
     technologies: [
       {
         name: "Spring Boot",
-        imageIcon: "/springboot.png",
+        imageIcon: "/icons/springboot.png",
         color:
           "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
         description:
@@ -48,7 +48,7 @@ export const projects: Project[] = [
       },
       {
         name: "React",
-        imageIcon: "/react.png",
+        imageIcon: "/icons/react.png",
         color:
           "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
@@ -56,7 +56,7 @@ export const projects: Project[] = [
       },
       {
         name: "TypeScript",
-        imageIcon: "/typescript.svg",
+        imageIcon: "/icons/typescript.svg",
         color:
           "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       },
       {
         name: "ONNX Runtime",
-        imageIcon: "/onnx.png",
+        imageIcon: "/icons/onnx.png",
         color:
           "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
         description:
@@ -72,7 +72,7 @@ export const projects: Project[] = [
       },
       {
         name: "Claude AI",
-        imageIcon: "/claude.svg",
+        imageIcon: "/icons/claude.svg",
         color:
           "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
         description:
@@ -80,7 +80,7 @@ export const projects: Project[] = [
       },
       {
         name: "Tailwind CSS",
-        imageIcon: "/tailwind.png",
+        imageIcon: "/icons/tailwind.png",
         color:
           "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
         description:
@@ -88,7 +88,7 @@ export const projects: Project[] = [
       },
       {
         name: "Docker",
-        imageIcon: "/docker.png",
+        imageIcon: "/icons/docker.png",
         color:
           "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     ],
     demoUrl: "https://churn-insight.netlify.app/",
     githubUrl: "https://github.com/carlaclefig/churn-insight",
-    imageUrl: "/churn-insight.png",
+    imageUrl: "/projects/churn-insight.png",
   },
   {
     slug: "track-library",
@@ -120,7 +120,7 @@ export const projects: Project[] = [
     technologies: [
       {
         name: "Node.js",
-        imageIcon: "/node.png",
+        imageIcon: "/icons/node.png",
         color:
           "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
         description:
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       },
       {
         name: "TypeScript",
-        imageIcon: "/typescript.svg",
+        imageIcon: "/icons/typescript.svg",
         color:
           "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
@@ -136,7 +136,7 @@ export const projects: Project[] = [
       },
       {
         name: "PostgreSQL",
-        imageIcon: "/postgresql.png",
+        imageIcon: "/icons/postgresql.png",
         color:
           "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
         description:
@@ -144,7 +144,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vite",
-        imageIcon: "/vite.png",
+        imageIcon: "/icons/vite.png",
         color:
           "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
         description:
@@ -152,7 +152,7 @@ export const projects: Project[] = [
       },
       {
         name: "Tailwind CSS",
-        imageIcon: "/tailwind.png",
+        imageIcon: "/icons/tailwind.png",
         color:
           "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
         description:
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     ],
     demoUrl: "https://track-library.netlify.app/",
     githubUrl: "https://github.com/carlaclefig/song-server",
-    imageUrl: "/tracklibrary.png",
+    imageUrl: "/projects/tracklibrary.png",
   },
   {
     slug: "notepad-app",
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     technologies: [
       {
         name: "HTML5",
-        imageIcon: "/html.png",
+        imageIcon: "/icons/html.png",
         color:
           "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
         description:
@@ -189,7 +189,7 @@ export const projects: Project[] = [
       },
       {
         name: "CSS3",
-        imageIcon: "/css.png",
+        imageIcon: "/icons/css.png",
         color:
           "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
         description:
@@ -197,7 +197,7 @@ export const projects: Project[] = [
       },
       {
         name: "JavaScript",
-        imageIcon: "/javascript.png",
+        imageIcon: "/icons/javascript.png",
         color:
           "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
         description:
@@ -205,7 +205,7 @@ export const projects: Project[] = [
       },
       {
         name: "Local Storage",
-        imageIcon: "/localstorage.webp",
+        imageIcon: "/icons/localstorage.webp",
         color:
           "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
         description:
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     ],
     demoUrl: "https://notepad-vanila-js.netlify.app/",
     githubUrl: "https://github.com/carlaclefig/js-notepad",
-    imageUrl: "/notepad.png",
+    imageUrl: "/projects/notepad.png",
   },
 ];
 
